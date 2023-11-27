@@ -49,3 +49,34 @@
 .first_name {
   font-size: 20px;
 }
+
+.user_info_section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.user_image_section {
+  background-color: #ccc;
+}
+.user_image_section > img {
+  border-radius: 100px;
+}
+
+.user_info {
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.user_data_names, .user_data_values {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_data_names {
+  margin-right: 15px;
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const UsersView = () => {
   const [users, setUsers] = useState([]);
@@ -15,22 +16,20 @@ const UsersView = () => {
   }, []);
 
   return (
-    <div>
       <div className="container">
         <div className='title'>
           Users
         </div>
         <div className='cards'>
         {users.map(user => 
-          <div className='card' key={user.id}>
+          <Link to={"/" + user.id} className='card' key={user.id}>
             <img className='user_image' src={user.avatar} width={"100%"} />
             <p className='first_name'>{user.first_name}</p>
             <p>{user.email}</p>
-          </div>
+          </Link>
         )} 
         </div>
       </div>
-    </div>
   );
 };
 
