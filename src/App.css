@@ -8,3 +8,44 @@
   align-items: center;
 }
 
+.App {
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 15px 50px 15px 50px;
+}
+
+.title {
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.user_image {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+.first_name {
+  font-size: 20px;
+}
